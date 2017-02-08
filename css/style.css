@@ -1,0 +1,100 @@
+body{
+ background: skyblue;   
+}
+#body{
+    width: 700px;
+    margin: 0 auto;
+    border-top: 5px solid darkturquoise;
+    border-bottom: 5px solid darkturquoise;
+}
+#logo{
+    text-align: center;
+    padding: 15px;
+    background-color: dodgerblue;
+    border-bottom: 5px solid darkturquoise;
+}
+#links{
+    width: 700px;
+    background-color: dodgerblue;
+    border-bottom: 5px solid darkturquoise;
+}
+#menu{
+    width: 608px;
+    height: 35px;
+    background-color: dodgerblue;
+    margin: 0 auto;
+    
+}
+#menu ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+#menu ul li{
+    float: left;
+}
+#menu ul li a{
+    text-decoration: none;
+    display: block;
+    height: 20px;
+    line-height:20px;
+    width: 140px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid darkblue;
+    border-radius: 8px;
+    color: black;
+    margin: 5px;
+    background-color: dodgerblue;
+    
+    background: linear-gradient(yellow, red);
+}
+#menu ul li a.current, #menu ul li a.current:hover{
+    background-color: black;
+    background: linear-gradient(darkblue, dodgerblue);
+    cursor: default;
+    color: aliceblue;
+}
+#menu ul li a:hover{
+    background-color: dodgerblue;
+    background: linear-gradient(red, yellow);
+}
+#content{
+    background: dodgerblue;
+    padding: 60px 0px;
+    border-bottom: 5px solid darkturquoise;
+}
+#paragraph{
+    width: 500px;
+    margin:auto;
+    border: 1px solid blue;
+    border-radius: 14px;
+    padding: 20px;
+    background-color: dodgerblue;
+    background: linear-gradient(skyblue, white);
+}
+#paragraph ul li{
+    clear: left;
+}
+#paragraph ul li a {
+    color: black
+}
+#paragraph img{
+    margin: 5px 15px;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    float:left;
+    background-color: dodgerblue;
+    background: linear-gradient(red, yellow);
+} 
+#footer{
+    text-align: center;
+    background-color: dodgerblue;
+    
+}
+#footer h4{
+    margin: 0;
+    padding: 0;
+}

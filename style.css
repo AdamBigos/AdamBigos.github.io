@@ -75,7 +75,8 @@ body{
     background: linear-gradient(skyblue, white);
 }
 #paragraph ul li{
-    padding: 30px
+    clear: left
+        
 }
 #paragraph img{
     margin: 5px 15px;

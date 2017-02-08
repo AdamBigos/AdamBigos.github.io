@@ -50,6 +50,12 @@ body{
     
     background: linear-gradient(yellow, red);
 }
+#menu ul li a.current, #menu ul li a.current:hover{
+    background-color: black;
+    background: linear-gradient(darkblue, dodgerblue);
+    cursor: default;
+    color: aliceblue;
+}
 #menu ul li a:hover{
     background-color: dodgerblue;
     background: linear-gradient(red, yellow);
@@ -67,6 +73,9 @@ body{
     padding: 20px;
     background-color: dodgerblue;
     background: linear-gradient(skyblue, white);
+}
+#paragraph ul li{
+    padding: 30px
 }
 #paragraph img{
     margin: 5px 15px;

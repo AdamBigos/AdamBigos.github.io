@@ -1,12 +1,13 @@
 body{
  background: skyblue;   
 }
-.body{
+#body{
     width: 700px;
-    border: 1px solid blue;
     margin: 0 auto;
+    border-top: 5px solid darkturquoise;
+    border-bottom: 5px solid darkturquoise;
 }
-#line{
+.line{
     width: 700px;
     height: 4px;
     background-color: darkturquoise;
@@ -15,16 +16,19 @@ body{
     text-align: center;
     padding: 15px;
     background-color: dodgerblue;
+    border-bottom: 5px solid darkturquoise;
 }
 #links{
     width: 700px;
     background-color: dodgerblue;
+    border-bottom: 5px solid darkturquoise;
 }
 #menu{
     width: 608px;
     height: 35px;
     background-color: dodgerblue;
     margin: 0 auto;
+    
 }
 #menu ul{
     list-style:none;
@@ -58,8 +62,9 @@ body{
 #content{
     background: dodgerblue;
     padding: 60px 0px;
+    border-bottom: 5px solid darkturquoise;
 }
-#paragraf{
+#paragraph{
     width: 500px;
     margin:auto;
     border: 1px solid blue;
@@ -68,7 +73,7 @@ body{
     background-color: dodgerblue;
     background: linear-gradient(skyblue, white);
 }
-#paragraf img{
+#paragraph img{
     margin: 5px 15px;
     border: 3px solid black;
     border-radius: 15px;
@@ -80,6 +85,7 @@ body{
 #footer{
     text-align: center;
     background-color: dodgerblue;
+    
 }
 #footer h4{
     margin: 0;

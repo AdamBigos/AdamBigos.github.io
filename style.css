@@ -7,11 +7,6 @@ body{
     border-top: 5px solid darkturquoise;
     border-bottom: 5px solid darkturquoise;
 }
-.line{
-    width: 700px;
-    height: 4px;
-    background-color: darkturquoise;
-}
 #logo{
     text-align: center;
     padding: 15px;

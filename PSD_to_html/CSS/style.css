@@ -1,4 +1,5 @@
 body{
+    border: 3px solid black;
     background-color: #16181b;
 }
 .main_wraper{
@@ -149,27 +150,274 @@ font-family: Tahoma, Verdana, Segoe, sans-serif;
      
 }
 
-.masrter_head_3_back img{
-    opacity: 0.7;
+.masrter_head_3_back {
+    position: relative;
+}
+
+.top_left{
+    position: absolute;
+    top: 144px;
+    left: 273px;
+}
+
+.top_left h5 {
+    height: 10px;
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: 'Sintony', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.top_left h3{
+    height: 18px;
+    color: #ffffff;
+    font-family: Sintony;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.masrter_head_3_back > img{
+    opacity: 0.3;
+}
+
+.middle_image{
+    position: absolute;
+    top: 206px;
+    left: 271px;
+}
+
+.middle_image > img:nth-child(2){
+    height: 705px;   
+}
+
+.Level_1 {
+    position: absolute;
+    left: 210px;
+    bottom: 197px;
+    border-top: 3px solid #ffffff;
+    width: 280px;
+    padding: 11px 0px;
+}
+.Level_1 a{
+    text-decoration: none;
+    height: 19px;
+    color: #ffffff;
+    font-family: Sintony;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    
+}
+
+.Design {
+    position: absolute;
+    left: 509px;
+    bottom: 197px;
+    border-top: 3px solid #ffffff;
+    width: 280px;
+    padding: 11px 0px;
+}
+.Design a{
+    text-decoration: none;
+    height: 19px;
+    color: #ffffff;
+    font-family: Sintony;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    
+}
+.Performace {
+    position: absolute;
+    left: 809px;
+    bottom: 197px;
+    border-top: 3px solid #afd869;
+    width: 280px;
+    padding: 11px 0px;
+}
+.Performace a{
+    text-decoration: none;
+    height: 19px;
+    color: #afd869;
+    font-family: Sintony;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    
+}
+.color {
+    position: absolute;
+    left: 1108px;
+    bottom: 197px;
+    border-top: 3px solid #ffffff;
+    width: 280px;
+    padding: 11px 0px;
+}
+.color a{
+    text-decoration: none;
+    height: 19px;
+    color: #ffffff;
+    font-family: Sintony;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    
 }
 
 .ipad {
+    width: 1600px;
+    height: 628px;
+    background-color: #a6d45b;
+    overflow: hidden;
+}
+
+.content_ipad {
+    float: left;
+    padding: 121px 0px 0px 267px;
+    width: 490px;
+}
+
+.content_ipad h2 {
+    height: 58px;
+    color: #ffffff;
+    font-family: 'Sintony', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+
+}
+
+.content_ipad p {
+    height: 134px;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.ipad img {
+    float: right;
+    padding: 94px 229px 0px 0px;
 }
 
 .buton_join {
+    width: 161px;
+    height: 49px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    text-align: center;
+    float: left;
+    margin: 10px 0px 0px 270px;
+}
+
+.buton_join a {
+    text-decoration: none;
+    margin: auto;
+    color: #a6d45b;
+    font-family: 'Sintony', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 49px;
+    text-transform: uppercase;
+    padding: 0;
 }
 
 .footer {
+    position: relative;
+    width: 1600px;
+    height: 657px;
+    background-color: #ffffff;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer h4{
+    color: #737c85;
+    font-family: 'Sintony', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color: #737c85;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+.footer p{
+    opacity: 0.5;
+    color: #737c85;
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 23px;
+    float: left;
+}
+
+.footer_logo {
+    position: absolute;
+    top: 414px;
+    left: 767px;
 }
 
 .Web_Design {
+    
+    margin: 10px 30px 10px 210px;
+    width: 250px;
+    height: 380px;
+    float: left;
 }
 
 .Step_by_Step {
+    
+    margin: 10px 30px;
+    width: 250px;
+    height: 380px;
+    float: left;
 }
 
 .Designers {
+    
+    margin: 10px 30px;
+    width: 250px;
+    height: 380px;
+    float: left;
 }
 
-.BlazRobar.com {
+.BlazRobarcom {
+    margin: 10px 30px;
+    width: 250px;
+    height: 380px;
+    float: left;
+}
+
+.copyright {
+    position: absolute;
+    top: 506px;
+    left: 723px;
 }

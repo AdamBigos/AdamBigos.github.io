@@ -1,0 +1,175 @@
+body{
+    background-color: #16181b;
+}
+.main_wraper{
+    width: 1600px;
+    margin: 0 auto;
+}
+.logo{
+    width: 404px;
+    height: 86px;
+    background-color: #a4d35a;
+    float: left;
+}
+.logo img{
+    padding: 30px 75px 30px 239px;
+}
+.navigation{
+    overflow: hidden;
+    width: 1196px;
+    height: 86px;
+    background-color: #272828;
+}
+.navigation ul {
+    margin: 0px 0px 0px 240px;
+}
+.navigation ul li{
+    margin: 33px 30px 37px 30px;
+    list-style: none;
+    display: inline-block;
+}
+.navigation ul li a{
+    text-decoration: none;
+    height: 13px;
+    color: #ffffff;
+    font-family: 'Sintony', sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+LiberationSans
+
+font-family: Tahoma, Verdana, Segoe, sans-serif;
+*/
+
+
+.mast_head_1 {
+    height: 763px;
+    width: 1600px;
+    background-image: url(../img/background_mast_head_1.jpg)
+}
+
+.mast_head_ul{
+    padding-top: 694px;
+    padding-left: 273px;
+}
+
+.mast_head_ul ul {
+    margin: 0px;
+}
+
+.mast_head_ul ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 7px;
+}
+
+.mast_head_2 {
+    width: 1600px;
+    height: 590px;
+    background-color: #16181b;
+}
+
+.mast_head_2 > img{
+    padding-top: 82px;
+    padding-left: 270px;
+    float: left;
+}
+
+.content_1 {
+    clear: both;
+    padding-top: 81px;
+    padding-left: 267px;
+    float: left;
+    width: 333px;
+}
+
+.content_1 h1 {
+    color: #ffffff;
+    font-family: 'Sintony', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.content_1 p {
+    color: #abbcc3;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.content_2 {
+    padding-top: 81px;
+    padding-left: 29px;
+    float: left;
+    width: 333px;
+}
+
+.content_2 h1 {
+    color: #ffffff;
+    font-family: 'Sintony', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.content_2 p {
+    color: #abbcc3;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.right_side_bar {
+    float: right;
+}
+
+.right_side_bar ul {
+    padding-top: 83px;
+    padding-right: 278px;
+}
+
+.right_side_bar ul li {
+    list-style: none;
+}
+
+.mast_head_3 {
+    width: 1600px;
+    height: 1153px;
+    background-color: #16181b;
+     
+}
+
+.masrter_head_3_back img{
+    opacity: 0.7;
+}
+
+.ipad {
+}
+
+.buton_join {
+}
+
+.footer {
+}
+
+.Web_Design {
+}
+
+.Step_by_Step {
+}
+
+.Designers {
+}
+
+.BlazRobar.com {
+}

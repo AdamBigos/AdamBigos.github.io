@@ -1,0 +1,19 @@
+body{
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+a{
+    padding: 10px 50px;
+    background-color: aliceblue;
+    color: black;
+    border: 3px solid white;
+    text-decoration: none;
+    margin: 30px;
+    text-align: center;
+    font-size: 4em;
+    border-radius: 30px;
+}
+.change_color{
+    padding: 160px;
+}

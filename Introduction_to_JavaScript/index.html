@@ -6,14 +6,45 @@
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
-        <div class="change_color">
+        <div class="butons">
             <a href="#change_color" id="violet">fioletowy</a>
             <a href="#change_color" id="green">zielony</a>
         </div>
-        <div>
-            <a href="#multiply" id="optionA"></a>
-            <a href="#multiply" id="optionB">naciśnij MNIE</a>
+        <div class="butons">
+            <a href="#options" id="optionA"></a>
+            <a href="#options" id="optionB">naciśnij MNIE</a>
         </div>
+        <!--<div>
+            <form>
+                <h2>WPISZ SWÓJ ULUBIONY KOLOR (TYLKO ANGIELSKIE ODPOWIEDNIKI)</h2><br>
+                <input type="text" name="text">
+                <input type="button" name="button" value="ZMIEŃ!" onClick="">
+            </form>
+        </div>-->
+        <div class="selectors">
+            <span>Kolor tła:</span>
+            <select id="background">
+              <option value="orange">Pomarańcz</option>
+              <option value="grey">Szary</option>
+              <option value="black">Czarny</option>
+            </select><span>Szerokość:</span>
+            <select id="width">
+              <option value="100px">100px</option>
+              <option value="200px">200px</option>
+              <option value="300px">300px</option>
+            </select><span>Wysokość:</span>
+            <select id="height">
+              <option value="100px">100px</option>
+              <option value="200px">200px</option>
+              <option value="300px">300px</option>
+            </select>
+            <span>Kształt:</span>
+            <select id="borderRadius">
+              <option value="100%">kolisty</option>
+              <option value="0%">kwadratowy</option>
+            </select>
+        </div>
+        <div id="content" style="background:orange; width:100px; height:100px; border-radius: 100%;"></div>
        <script type="text/javascript" src="js/Introduction_to_JavaScript.js"></script>
     </body>
 </html>

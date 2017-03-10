@@ -1,12 +1,18 @@
 body{
     background-color: cornflowerblue;
     text-align: center;
+    margin: 0 auto;
 }
 
 a{
-    padding: 10px 50px;
+    float: left;
+    display: block;
+    line-height: 90px;
+    width: 400px;
+    height: 90px;
     background-color: aliceblue;
     color: black;
+    padding: 0px;
     border: 3px solid white;
     text-decoration: none;
     margin: 30px;
@@ -14,6 +20,35 @@ a{
     font-size: 4em;
     border-radius: 30px;
 }
-.change_color{
+
+.butons{
+    width: 932px;
     padding: 160px;
+    margin: 0 auto;
+}
+
+input{
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 3em;
+}
+
+span{
+    font-size: 1.5em;
+}
+
+select{
+    font-size: 2em;
+}
+
+.selectors{
+    margin: 40px 0px;
+}
+
+#content {
+    margin: 0 auto;
+}
+
+h2{
+    color: white;
 }

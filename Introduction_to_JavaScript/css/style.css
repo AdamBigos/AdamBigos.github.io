@@ -21,16 +21,10 @@ a{
     border-radius: 30px;
 }
 
-.butons{
+.butons_wraper{
     width: 932px;
     padding: 160px;
     margin: 0 auto;
-}
-
-input{
-    padding: 20px;
-    border-radius: 15px;
-    font-size: 3em;
 }
 
 span{
@@ -41,8 +35,9 @@ select{
     font-size: 2em;
 }
 
-.selectors{
-    margin: 40px 0px;
+.selectors_wraper{
+    clear: left;
+    margin: 60px 0px;
 }
 
 #content {

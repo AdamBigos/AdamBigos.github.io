@@ -6,22 +6,26 @@
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
-        <div class="butons">
-            <a href="#change_color" id="violet">fioletowy</a>
-            <a href="#change_color" id="green">zielony</a>
+        <div class="butons_wraper">
+            <div class="backgroundColor">
+                <a href="#change_color" id="violet">fioletowy</a>
+                <a href="#change_color" id="green">zielony</a>
+            </div>
+            <div class="changeContent">
+                <a href="#options" id="optionA"></a>
+                <a href="#options" id="optionB">naciśnij MNIE</a>
+            </div>
         </div>
-        <div class="butons">
-            <a href="#options" id="optionA"></a>
-            <a href="#options" id="optionB">naciśnij MNIE</a>
-        </div>
-        <!--<div>
+        <!--   do wypróbowania
+           
+           <div>
             <form>
                 <h2>WPISZ SWÓJ ULUBIONY KOLOR (TYLKO ANGIELSKIE ODPOWIEDNIKI)</h2><br>
                 <input type="text" name="text">
                 <input type="button" name="button" value="ZMIEŃ!" onClick="">
             </form>
         </div>-->
-        <div class="selectors">
+        <div class="selectors_wraper">
             <span>Kolor tła:</span>
             <select id="background">
               <option value="orange">Pomarańcz</option>
@@ -41,7 +45,7 @@
             <span>Kształt:</span>
             <select id="borderRadius">
               <option value="100%">kolisty</option>
-              <option value="0%">kwadratowy</option>
+              <option value="0%">kanciasty</option>
             </select>
         </div>
         <div id="content" style="background:orange; width:100px; height:100px; border-radius: 100%;"></div>

@@ -15,7 +15,7 @@
 
 //document.getElementById("green").addEventListener('click', eventchangecolorgreen);
 
-var changeBackgroundColor = document.getElementsByClassName('backgroundColor');
+var changeBackgroundColor = document.getElementByClassName('backgroundColor');
 
 function changeColor() {var value = this.id; 
                            document.body.style.backgroundColor= value; }

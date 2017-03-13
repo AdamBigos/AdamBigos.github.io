@@ -15,15 +15,26 @@
 
 //document.getElementById("green").addEventListener('click', eventchangecolorgreen);
 
-var changeBackgroundColor = document.getElementByClassName('backgroundColor');
+//var changeBackgroundColor = document.getElementsByClassName('backgroundColor');
+//
+//function changeColor() {var value = this.id; 
+//                           document.body.style.backgroundColor= value; }
+//
+//for (var i = 0; i < changeBackgroundColor.length; i++ ){
+//    
+//    changeBackgroundColor[i].addEventListener( 'click', changeColor );
+//}
+
+var changeBackgroundColor = document.getElementsByTagName('input');
 
 function changeColor() {var value = this.id; 
-                           document.body.style.backgroundColor= value; }
+                           document.body.style.backgroundColor = value; }
 
 for (var i = 0; i < changeBackgroundColor.length; i++ ){
     
     changeBackgroundColor[i].addEventListener( 'click', changeColor );
 }
+
 
 var arraySelect = document.getElementsByTagName('select');
 

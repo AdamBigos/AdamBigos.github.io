@@ -4,7 +4,7 @@ body{
     margin: 0 auto;
 }
 
-a{
+/*a{
     float: left;
     display: block;
     line-height: 90px;
@@ -19,12 +19,29 @@ a{
     text-align: center;
     font-size: 4em;
     border-radius: 30px;
-}
+}*/
 
 .butons_wraper{
     width: 932px;
     padding: 160px;
     margin: 0 auto;
+}
+
+input{
+    float: left;
+    display: block;
+    line-height: 90px;
+    width: 400px;
+    height: 90px;
+    background-color: aliceblue;
+    color: black;
+    padding: 0px;
+    border: 3px solid white;
+    text-decoration: none;
+    margin: 30px;
+    text-align: center;
+    font-size: 4em;
+    border-radius: 30px;
 }
 
 span{

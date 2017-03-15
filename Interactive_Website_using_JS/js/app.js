@@ -32,4 +32,4 @@ var main = function() {
 //  });
 }
 
-$( window ).on( "load", main );
+$(document).ready(main);

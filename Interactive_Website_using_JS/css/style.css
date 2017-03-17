@@ -7,8 +7,9 @@ body {
 
 .menu {
     width: 556px;
+    height: 28px;
     margin: 10px auto;
-    /*display: none;*/
+    display: none;
 }
 
 .menu img {
@@ -48,28 +49,30 @@ body {
 
 .top_wraper {
     background: rgba(128, 128, 128, 0.9);
-    padding: 0px 60px;
     cursor: pointer;
-    /*display: none;*/
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .top_wraper_menu{
     width: 555px;
     margin: 0px auto;
+    padding: 0px;
 }
 
 .top_wraper img {
-    height: 1.3em;
-    margin-right: 10px;
+    height: 16px;
+    margin: auto 10px;
     padding: 0px;    
 }
 
 .top_wraper a{
-    font-size: 2em;
+    font-size: 1em;
+    line-height: 30px;
     color: aliceblue;
-    line-height: 2em;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -96,28 +99,12 @@ body {
     margin: 0px;
 }
 
-.title {
-}
-
 .description_row {
     text-align: center;
     padding:  10px;
+    display: none;
 }
 
 .current {
     background: rgba(200, 200, 30, 0.9);    
 }
-
-
-/*
-.pubdate {
-    text-align: right;
-    width: 150px;
-    line-height: 25px;
-    padding: 0px;
-    float: left;
-}
-.pubdate p {
-    margin: 15px 15px 15px 0px;
-}
-*/

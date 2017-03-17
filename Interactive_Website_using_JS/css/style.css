@@ -12,12 +12,6 @@ body {
     display: none;
 }
 
-.menu img {
-    padding: 0px;
-    margin: 0px;
-    width: 1em;
-}
-
 .close_ikon {
     float: left;
     margin: 3px 10px;
@@ -28,6 +22,12 @@ body {
     list-style: none;
     margin: 0px;
     padding: 0px;
+}
+
+.menu img {
+    padding: 0px;
+    margin: 0px;
+    width: 1em;
 }
 
 .menu li {
@@ -77,16 +77,17 @@ body {
     text-transform: uppercase;
 }
 
+.current {
+    background: rgba(200, 200, 30, 0.9);    
+}
+
 .article_container {
     width: 700px;
-    margin: 30px auto;
+    margin: 50px auto;
     background: rgba(240, 240, 240, 0.9);
 }
 
-.article_wraper {
-}
-
-.article_title {
+h3 {
     text-align: center;
     cursor: pointer;
     margin: 0px;
@@ -95,16 +96,9 @@ body {
     border-top: 2px solid white;
 }
 
-.article_title h3 {
-    margin: 0px;
-}
-
-.description_row {
+p {
     text-align: center;
     padding:  10px;
     display: none;
 }
 
-.current {
-    background: rgba(200, 200, 30, 0.9);    
-}

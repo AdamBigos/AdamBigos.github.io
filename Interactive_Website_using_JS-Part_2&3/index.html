@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interactive Website using JS - Part 2 & 3</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href='css/style.css'/>
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700,inherit,400"/>
+    </head>
+    <body>
+        <div class="top_wraper">
+           <div class="top_left_menu">
+               <div class="weather_logo"></div><p class="dropdown-toggle">Pogoda :</p>
+           </div>
+           <img src='images/menu_ikon.png' alt="LOGO"/>
+        </div>
+        <div class="weather_forcast">
+           <div class="container clearfix">
+                <p class="location"></p>
+                <p class="temperature"></p>
+                <div class="climate_bg"></div>
+                <div class="info_bg">
+                    <img class="dropicon" src="images/Droplet.svg" alt="droplet"/>
+                    <p class="humidity"></p>
+                    <img class="windicon" src="images/Wind.svg" alt="wind" />
+                    <div class="windspeed"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content_wraper">
+           <div class="main">
+               <div class="post">
+                    <textarea class="form" rows="4" placeholder="co o tym myślisz?"></textarea>
+                    <div class="button-group">
+                        <p class="counter">200</p>
+                        <a href="#button" class="button">Post</a>
+                    </div>
+                    <ul class="posts">
+                    </ul>
+                 </div>
+                <div class="content">
+                  <div>
+                       <div class="robota">               
+                           <h1> pomachaj</h1>
+                           <div>
+                               <img class="robot active-slide" src="images/1.png" alt="robot"/>
+                               <img class="robot" src="images/2.png" alt="robot"/>
+                               <img class="robot" src="images/3.png" alt="robot"/>
+                               <img class="robot" src="images/4.png" alt="robot"/>
+                               <img class="robot" src="images/5.png" alt="robot"/>
+                               <img class="robot" src="images/6.png" alt="robot"/>
+                               <img class="robot" src="images/5.png" alt="robot"/>
+                               <img class="robot" src="images/4.png" alt="robot"/>
+                               <img class="robot" src="images/3.png" alt="robot"/> 
+                               <img class="robot" src="images/2.png" alt="robot"/>
+                           </div>      
+                       </div>
+                    </div> 
+                   <div class="slide">
+                        <div class="slider_nav">
+                            <a href="#arrow-prev" class="arrow-prev"><strong>&lt;</strong></a>
+                            <ul class="slider-dots">
+                                <li class="dot active-dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                                <li class="dot">&#x2605;</li>
+                            </ul>
+                            <a href="#arrow-next" class="arrow-next"><strong>&gt;</strong></a>
+                        </div> 
+                    </div>
+                 </div> 
+                 
+                 <footer>
+                     <p>kontakt :</p>
+               <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">e-Mail</a>
+                 </footer>
+            </div>
+       </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>

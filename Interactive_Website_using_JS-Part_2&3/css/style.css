@@ -12,11 +12,6 @@ body {
     margin: 14px 30px;
 }
 
-.top_left_menu {
-    float: right;
-    padding: 10px;
-}
-
 .weather_logo{
     float: right;
     padding: 0px;
@@ -24,7 +19,7 @@ body {
     color: aliceblue;
 }
 
-.top_left_menu p {
+.top_wraper p {
     float: right;
     color: aliceblue;
     display: inline;
@@ -56,11 +51,15 @@ body {
 }
 
 .content {
+    float: left;
     width: 600px;
     margin: 20px;
+    padding: 0px;
 }
 
 .robota {
+    float: left;
+    width: 600px;
     height: 255px;
     margin: 10px 0px;
     border-top: 2px solid black;
@@ -76,11 +75,6 @@ body {
     display: block;
 }
 
-.content img {
-    width: 300px;
-    padding: 30px
-}
-
 .robota h1 {
     margin: 20px;
     float: left;
@@ -89,36 +83,41 @@ body {
     cursor: pointer;
 }
 
-.slider_nav{
-    width: 350px;
-    height: 3.2em;
-    margin: 0px auto;
+.content img {
+    width: 300px;
+    padding: 30px
 }
 
-.slider_nav ul{
+.slide{
+    text-align: center;
+}
+
+.slide ul{
+    display: inline-block;
     list-style: none;
-    margin: 0px;
     padding: 0px;
+    margin: auto;
 }
 
-.slider_nav ul li {
+.slide ul li {
     display: inline;
-    float: left;
-    margin: 21px 4px;
+    line-height: 30px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.slide a {
+    text-decoration: none;
+    display: inline-block;
+    font-family:  sans-serif;
+    color: aliceblue;
+    line-height: 30px;
+    font-size: 30px;
+    margin: 0px 20px;
 }
 
 .dot {
     color: red;
-}
-
-.slider_nav a {
-    text-decoration: none;
-    display: inline;
-    float: left;
-    font-family:  sans-serif;
-    color: aliceblue;
-    font-size: 3em;
-    margin: 0px 20px;
 }
 
 .active-dot{
@@ -126,17 +125,17 @@ body {
 }
 
 .post {
-    float: right;
-}
-
-.button-group {
-    margin: 20px;
-    text-align: right;
+    float: left;
 }
 
 .disabled {
     opacity: 0.1;
     pointer-events: none;
+}
+
+.button-group {
+    margin: 20px;
+    text-align: right;
 }
 
 .button-group p {
@@ -156,17 +155,9 @@ body {
 }
 
 textarea {
-    width: 340px;
-    margin-right: 20px;
-}
-
-footer a {
-    border: 1px solid white;
-    text-decoration: none;
-    color: aliceblue;
-    padding: 4px 25px;
-    margin: 20px;
-    border-radius: 5px;
+    width: 333px;
+    margin-left: 10px;
+    margin-top: 30px;
 }
 
 .post ul {
@@ -182,7 +173,7 @@ footer a {
     word-wrap: break-word;
     border-radius: 5px;
     width: 300px;
-    margin-right: 20px
+    margin-left: 10px
 }
 
 footer {
@@ -197,6 +188,15 @@ footer p {
     color: aliceblue;
     display: inline;
     text-transform: uppercase;
+}
+
+footer a {
+    border: 1px solid white;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 4px 25px;
+    margin: 20px;
+    border-radius: 5px;
 }
 
 .info_bg p {

@@ -46,21 +46,20 @@ body {
 }
 
 .main {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0px auto;
 }
 
 .content {
     float: left;
-    width: 600px;
+    max-width: 600px;
     margin: 20px;
     padding: 0px;
 }
 
 .robota {
     float: left;
-    width: 600px;
-    height: 255px;
+    min-height: 255px;
     margin: 10px 0px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -84,7 +83,7 @@ body {
 }
 
 .content img {
-    width: 300px;
+    width: 50%;
     padding: 30px
 }
 
@@ -102,7 +101,7 @@ body {
 .slide ul li {
     display: inline;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 1.2em;
     margin: auto;
 }
 
@@ -111,8 +110,7 @@ body {
     display: inline-block;
     font-family:  sans-serif;
     color: aliceblue;
-    line-height: 30px;
-    font-size: 30px;
+    
     margin: 0px 20px;
 }
 
@@ -125,6 +123,7 @@ body {
 }
 
 .post {
+    max-width: 359px;
     float: left;
 }
 
@@ -156,7 +155,7 @@ body {
 
 textarea {
     width: 333px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 30px;
 }
 
@@ -173,7 +172,7 @@ textarea {
     word-wrap: break-word;
     border-radius: 5px;
     width: 300px;
-    margin-left: 10px
+    margin-left: 20px
 }
 
 footer {

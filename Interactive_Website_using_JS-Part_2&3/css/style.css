@@ -116,6 +116,7 @@ body {
 
 .dot {
     color: red;
+    cursor: pointer;
 }
 
 .active-dot{

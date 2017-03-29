@@ -1,6 +1,6 @@
 var menuDropdown = function(){
         $('.weather_forcast').toggle();
-        }
+}
 
 var arrowClickHandler = function(){
         

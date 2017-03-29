@@ -1,119 +1,69 @@
 var main = function(){
     
     var menuDropdown = function(){
-    $('.weather_forcast').toggle();
-    }
+        $('.weather_forcast').toggle();
+        }
     
     $('.dropdown-toggle').click(menuDropdown);
     
-    var sliderEventEfect = function(){
-        
-        if(this.class == "arrow-next"){
+    
+    var arrowEvent = function(){
         
         var currentSlide = $('.active-slide');
         var nextSlide = currentSlide.next();
-        
-        if(nextSlide.length === 0){
-            nextSlide = $('.robot').first();
-        }
+        var prevSlide = currentSlide.prev();
         
         currentSlide.removeClass('active-slide');
-        nextSlide.addClass('active-slide');
         
         var currentDot = $('.active-dot');
         var nextDot = currentDot.next();
+        var prevDot = currentDot.prev();
         
-        if(nextDot.length === 0){
+        currentDot.removeClass('active-dot');
+        
+        if(this.id == 'next'){
+            
+            if(nextSlide.length === 0){
+            nextSlide = $('.robot').first();
+            }
+            
+            nextSlide.addClass('active-slide');
+            
+            if(nextDot.length === 0){
             nextDot = $('.dot').first();
+            }
+            
+            nextDot.addClass('active-dot');
         }
         
-        currentDot.removeClass('active-dot');
-        nextDot.addClass('active-dot');
+        if(this.id == 'prev'){
             
-        } else if(this.class == 'd1'){
-            $('.robot').removeClass('active-slide');
-            $('.r1').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d1').addClass('active-dot');
+            if(prevSlide.length === 0){
+            prevSlide = $('.robot').last();
+            }
             
+            prevSlide.addClass('active-slide');
             
-        } else if(this.class == 'd2'){
-            $('.robot').removeClass('active-slide')
-            $('.r2').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d2').addClass('active-dot');
+            if(prevDot.length === 0){
+            prevDot = $('.dot').last();
+            }
             
-        } else if(this.class == 'd3'){
-            $('.robot').removeClass('active-slide');
-            $('.r3').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d3').addClass('active-dot');
-            
-        } else if(this.class == 'd4'){
-            $('.robot').removeClass('active-slide');
-            $('.r4').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d4').addClass('active-dot');
-            
-        } else if(this.class == 'd5'){
-            $('.robot').removeClass('active-slide');
-            $('.r5').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d5').addClass('active-dot');
-            
-        } else if(this.class == 'd6'){
-            $('.robot').removeClass('active-slide');
-            $('.r6').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d6').addClass('active-dot');
-            
-        } else if(this.class == 'd7'){
-            $('.robot').removeClass('active-slide');
-            $('.r7').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d7').addClass('active-dot');
-            
-        } else if(this.class == 'd8'){
-            $('.robot').removeClass('active-slide');
-            $('.r8').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d8').addClass('active-dot');
-            
-        } else if(this.class == 'd9'){
-            $('.robot').removeClass('active-slide');
-            $('.r9').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d9').addClass('active-dot');
-            
-        } else if(this.class == 'd10'){
-            $('.robot').removeClass('active-slide');
-            $('.r10').addClass('active-slide');
-            $('.dot').removeClass('active-dot');
-            $('.d10').addClass('active-dot');
-            
-        } else if(this.class == 'arrow-prev'){
-        
-        var currentSlide = $('.active-slide');
-        var nextSlide = currentSlide.prev();
-        
-        if(nextSlide.length === 0){
-            nextSlide = $('.robot').last();
-        }
-        
-        currentSlide.removeClass('active-slide');
-        nextSlide.addClass('active-slide');
-        
-        var currentDot = $('.active-dot');
-        var nextDot = currentDot.prev();
-        if(nextDot.length === 0){
-            nextDot = $('.dot').last();
-        }
-        currentDot.removeClass('active-dot');
-        nextDot.addClass('active-dot');
+            prevDot.addClass('active-dot');
         }
     }
     
-    $('.slide').click(sliderEventEfect)
+    $('.arrow').click(arrowEvent);
+
+    var dotEvent = function() {
+        
+        $('.robot').removeClass('active-slide');
+        $('.dot').removeClass('active-dot');
+        
+        $(this).addClass('active-dot');
+        slide.dataset.order.addClass('active-slide');
+    }
+    
+    $('.dot').click(dotEvent);
     
     var buttonEvent = function() {
         var post = $('.form').val();
@@ -147,6 +97,6 @@ var main = function(){
   
     $('.button').addClass('disabled');
     
-};
+}
 
 $(document).ready(main);

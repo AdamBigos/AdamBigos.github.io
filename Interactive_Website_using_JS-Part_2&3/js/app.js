@@ -1,27 +1,20 @@
-var main = function(){
-    
-    var menuDropdown = function(){
+var menuDropdown = function(){
         $('.weather_forcast').toggle();
         }
-    
-    $('.dropdown-toggle').click(menuDropdown);
-    
-    
-    var arrowEvent = function(){
+
+var arrowClickHandler = function(){
         
         var currentSlide = $('.active-slide');
-        var nextSlide = currentSlide.next();
-        var prevSlide = currentSlide.prev();
         
         currentSlide.removeClass('active-slide');
         
         var currentDot = $('.active-dot');
-        var nextDot = currentDot.next();
-        var prevDot = currentDot.prev();
         
         currentDot.removeClass('active-dot');
         
         if(this.id == 'next'){
+            var nextSlide = currentSlide.next();
+            var nextDot = currentDot.next();
             
             if(nextSlide.length === 0){
             nextSlide = $('.robot').first();
@@ -34,9 +27,10 @@ var main = function(){
             }
             
             nextDot.addClass('active-dot');
-        }
-        
-        if(this.id == 'prev'){
+            
+        } else if(this.id == 'prev'){
+            var prevSlide = currentSlide.prev();
+            var prevDot = currentDot.prev();
             
             if(prevSlide.length === 0){
             prevSlide = $('.robot').last();
@@ -50,33 +44,28 @@ var main = function(){
             
             prevDot.addClass('active-dot');
         }
-    }
-    
-    $('.arrow').click(arrowEvent);
+}
 
-    var dotEvent = function() {
+var dotClickHandler = function() {
         
         $('.robot').removeClass('active-slide');
         $('.dot').removeClass('active-dot');
         
+        var kimono = this.dataset.order;
         $(this).addClass('active-dot');
-        $('.robot[data-order='+this.dataset.order+']').addClass('active-slide');
-    }
-    
-    $('.dot').click(dotEvent);
-    
-    var buttonEvent = function() {
+        $('.robot[data-order='+kimono+']').addClass('active-slide');
+}
+
+var buttonEvent = function() {
         var post = $('.form').val();
 
         $('<li>').text(post).prependTo('.posts');
         $('.form').val('');
         $('.counter').text('200');
         $('.button').addClass('disabled'); 
-    }
-    
-    $('.button').click(buttonEvent);
-    
-    var formEvent = function() {
+}
+
+var formEvent = function() {
         var postLength = $(this).val().length;
         var charactersLeft = 200 - postLength;
         $('.counter').text(charactersLeft);
@@ -90,9 +79,18 @@ var main = function(){
         else {
           $('.button').removeClass('disabled');
         }
-    }
+}
+
+var main = function(){
     
-  
+    $('.dropdown-toggle').click(menuDropdown);
+    
+    $('.arrow').click(arrowClickHandler);
+
+    $('.dot').click(dotClickHandler);
+    
+    $('.button').click(buttonEvent);
+    
     $('.form').keyup(formEvent);
   
     $('.button').addClass('disabled');

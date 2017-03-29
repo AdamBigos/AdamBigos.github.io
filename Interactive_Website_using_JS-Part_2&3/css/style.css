@@ -1,6 +1,5 @@
 body {
     background-image: url(../images/black-thread.png);
-    font: 400 1em/1.38 Montserrat;
 }
 
 .top_wraper {
@@ -261,7 +260,6 @@ footer a {
   width: 248px;
   min-height: 24px;
   margin: 0 auto;
-  font: 0.625em/1.38 'Trebuchet MS';
   color: rgb(0, 0, 0);
 }
 

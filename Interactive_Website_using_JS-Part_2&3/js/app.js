@@ -60,7 +60,7 @@ var main = function(){
         $('.dot').removeClass('active-dot');
         
         $(this).addClass('active-dot');
-        slide.dataset.order.addClass('active-slide');
+        $('.robot[data-order='+this.dataset.order+']').addClass('active-slide');
     }
     
     $('.dot').click(dotEvent);

@@ -21,7 +21,7 @@ function textChangeListener (evt) {
       ctx.fillStyle = 'white';
       
       if (bottomLine != null) {
-        ctx.fillText(bottomLine, canvas.width / 2, canvas.height - 20);
+        ctx.fillText(bottomLine, canvas.width / 2, canvas.height - 50);
         
       }
     }
@@ -30,7 +30,7 @@ function textChangeListener (evt) {
       window.open(document.querySelector('canvas').toDataURL());
     }
     
-   /* function handleFileSelect(evt) {
+   function handleFileSelect(evt) {
       var canvasWidth = 500;
       var canvasHeight = 600;
       var file = evt.target.files[0];
@@ -51,12 +51,12 @@ function textChangeListener (evt) {
         console.log(fileObject.target.result);
       };
       reader.readAsDataURL(file)
-    }*/
+    }
 
     var input = document.getElementById('textLine');
 
     input.oninput = textChangeListener;
 
-    document.getElementById('background').addEventListener('change', handleFileSelect, false);
+    document.getElementById('file').addEventListener('change', handleFileSelect, false);
 
     document.querySelector('button').addEventListener('click', saveFile, false);

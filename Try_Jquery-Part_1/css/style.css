@@ -1,0 +1,110 @@
+body {
+    
+    background: grey;
+}
+
+.main {
+    margin: 0px auto;
+    max-width: 1000px;
+    background: silver;
+}
+
+.menu {
+    text-align: right;
+    padding: 30px;
+    border-bottom: 3px solid white;
+}
+
+.menu a {
+    width: 150px;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 4px 15px;
+    margin: 3px 10px;
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    background: grey;
+    border-radius: 10px;
+    
+}
+
+.highlighted {
+    background: DimGray;
+}
+
+.offer {
+    border: 4px double white;
+    margin: 20px;
+    padding: 15px;
+    width: 255px;
+    float: left;
+}
+
+.offer > h2 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    display: inline-block;
+    
+}
+
+#price_top {
+    color: red;
+    transform:rotate(25deg);
+    font-size: 1.9em;
+    margin: 11px;
+    opacity: 0;
+}
+
+.image_wraper{
+    background: white;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.image_wraper img{
+    height: 200px;
+}
+
+.price {
+     text-align: center;
+}
+
+input {
+    width: 33px;
+}
+
+button {
+    background: green;
+    width: 240px;
+    height: 40px;
+    color: aliceblue;
+    font-size: 1.9em
+}
+
+.details{
+    display: none;
+}
+
+footer {
+    clear: left;
+    height: 40px;
+    text-align: center;
+}
+
+footer a {
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: grey;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/*
+               <p class="price" data-price="1000">cena to 1000pln</p>
+               <p>ALBO na raty 0%</p>
+               <p><span id="monthly">500</span>pln przez <input type="number" id="nights" value="2"><span id="declension">miesiące</span></p>
+               <button class="buy">Buy Now</button>
+               <p class="details">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>*/

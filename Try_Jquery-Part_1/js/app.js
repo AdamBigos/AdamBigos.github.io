@@ -25,7 +25,9 @@ var keyupHandler = function(){
 var changeHandler = function(){
     var instalments = +$(this).closest('.offer').data('price');
     var monthsCounter = +$(this).val();
-    $(this).closest('.offer').find('#instalments').text(instalments / monthsCounter);
+    var x = instalments / monthsCounter;
+    var rounded = Math.round(x*100)/100;
+    $(this).closest('.offer').find('#instalments').text(rounded);
 }
     
 var detailsHandler = function(){

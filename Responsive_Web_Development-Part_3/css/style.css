@@ -8,10 +8,11 @@ body {
 
 img {
     max-width: 100%;
+    margin: 0px auto;
 }
 
 #first-container {
-    background: url(../img/stage.jpg) no-repeat;
+    background: url(../img/stage.jpg) center top no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -33,24 +34,14 @@ img {
     font-weight: bold;
 }
 
-.carousel-item img {
-    margin: 0px auto;
+.darker_background {
+    background: #024752;
+    color: white;
 }
 
 .text_center {
     margin: 2rem 0;
     text-align: center;
-}
-
-#link_content {
-    max-width: 80rem;
-    padding:0 2rem;
-    margin: 0px auto;
-}
-
-#link_content a {
-    padding: 1rem;
-    float: left;
 }
 
 .max-width-60 {
@@ -66,8 +57,8 @@ img {
     background: linear-gradient(to right, rgba(0,0,0,0.01) , rgba(2,71,82,0.9));
 }
 
-#third-container{
-    background: #024752;
+.wraper {
+    padding: 5rem 0rem;
 }
 
 footer {
@@ -86,8 +77,24 @@ footer a {
     border-radius: 4px;
 }
 
-#margin_left{margin-left: 2rem}
+h6 {
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
 
-@media only screen and (min-width: 1200px) {
+.vertical_center {
+    display: flex;
+    align-items: center; 
+}
+
+@media only screen and (min-width: 992px) {
+    .height_restriction {
+        max-height: 35rem;
+        overflow: hidden;
+    }
     
+    .height_restriction img{
+        margin-bottom: -5rem;
+    }
 }

@@ -62,12 +62,33 @@ img {
 }
 
 footer {
-    margin-top: 8rem;
-    text-align: center;
-    background: rgba(11,121,211, 0.6);
+    margin-top: 4rem;
+    padding: 2rem 0rem;
+   
 }
 
-footer a {
+footer h5 {
+    font-size: 0.8rem;
+}
+
+footer ul {
+    padding: 0;    
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.return {
+    text-align: center;
+}
+
+.return a {
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
@@ -75,6 +96,15 @@ footer a {
     color: aliceblue;
     text-decoration: none;
     border-radius: 4px;
+}
+
+.height_limit {
+    max-height: 40rem;
+}
+
+.center_content {
+    display: flex;
+    align-items: center;
 }
 
 h6 {

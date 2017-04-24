@@ -136,6 +136,9 @@ h6 {
         display: inline-block;
         width: 7rem;
         text-align: center;
-        background: #323732;
+    }
+    
+    .col-lg-3 ul li a {
+    color: grey;
     }
 }

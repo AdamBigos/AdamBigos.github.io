@@ -1,13 +1,12 @@
-
 function loadData() {
 
-    var $body = $('body');
+    var $generateImg = $('#generated_img');
     var $wikiElem = $('#wikipedia-links');
     var $nytHeaderElem = $('#nytimes-header');
     var $nytElem = $('#nytimes-articles');
     var $greeting = $('#greeting');
-
-    // clear out old data before new request
+    
+    $generateImg.text("");
     $wikiElem.text("");
     $nytElem.text("");
 
@@ -15,17 +14,17 @@ function loadData() {
     var cityStr = $('#city').val();
     var address = streetStr + ', ' + cityStr;
     
-    $greeting.text('so you chcesz  ' + address + '?');
+    $greeting.text('Więc podoba ci się ' + address + '?');
     
     var streetviewUrl = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + address + '';
     
-    $body.append('<img class="bgimg" src="' + streetviewUrl + '">');
+    $generateImg.append('<img src="' + streetviewUrl + '">');
 
     var nytimesUrl = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + cityStr + '&sort=newest&api-key=ab32caf3cd7c419db3b3df0cdf2d59ad';
     
    $.getJSON(nytimesUrl, function(data){
         
-        $nytHeaderElem.text('New York Times Articles About ' + cityStr);
+        $nytHeaderElem.text('Artykuły w NYT o lokalizacji: ' + cityStr);
         
         articles = data.response.docs;
         
@@ -34,14 +33,14 @@ function loadData() {
             $nytElem.append('<li class="article">' + '<a href="' + article.web_url + '">' + article.headline.main + '</a>' + article.snippet + '</p>' + '</li>');
         };
     }).error(function(e){
-       $nytHeaderElem.text('tu ma się coś pokazać');
+       $nytHeaderElem.text('Najwidoczniej NYT nic nie napisał o tej lokacji, a szkoda bo jest tak urocza');
     });
     
     var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + cityStr + '&format=json&callback=wikiCallback';
     
     var wikiRequestTimeout = setTimeout(function(){
-        $wikiElem.text("failed to get wikipedia resources");
-    }, 8000);
+        $wikiElem.text("Nie udało się połączyć z Wikipedią, lub nie ma treści dotyczącej okolicy. W drugim wypdku zachęcam do dodania artykułu do Wikipedi");
+    }, 10000);
 
     $.ajax({
         url: wikiUrl,
@@ -59,8 +58,6 @@ function loadData() {
             clearTimeout(wikiRequestTimeout);
         }
     });
-    
-    
     return false;
 };
 

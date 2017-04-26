@@ -39,7 +39,7 @@ function loadData() {
     var wikiUrl = 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' + cityStr + '&format=json&callback=wikiCallback';
     
     var wikiRequestTimeout = setTimeout(function(){
-        $wikiElem.text("Nie udało się połączyć z Wikipedią, lub nie ma treści dotyczącej okolicy. W drugim wypdku zachęcam do dodania artykułu do Wikipedi");
+        $wikiElem.text("Nie udało się połączyć z Wikipedią, lub nie ma treści dotyczącej okolicy. W drugim wypadku zachęcam do dodania artykułu do Wikipedi");
     }, 10000);
 
     $.ajax({

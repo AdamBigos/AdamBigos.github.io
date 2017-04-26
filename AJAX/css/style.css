@@ -25,10 +25,6 @@ img {
     text-align: center;
 }
 
-.form {
-    display: inline-block;
-}
-
 .no_marks {
     list-style: none;
     margin: 0px -40px;

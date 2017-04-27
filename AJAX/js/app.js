@@ -1,10 +1,10 @@
-function loadData() {
+var $generateImg = $('#generated_img');
+var $wikiElem = $('#wikipedia-links');
+var $nytHeaderElem = $('#nytimes-header');
+var $nytElem = $('#nytimes-articles');
+var $greeting = $('#greeting');
 
-    var $generateImg = $('#generated_img');
-    var $wikiElem = $('#wikipedia-links');
-    var $nytHeaderElem = $('#nytimes-header');
-    var $nytElem = $('#nytimes-articles');
-    var $greeting = $('#greeting');
+function loadData() {
     
     $generateImg.text("");
     $wikiElem.text("");
@@ -16,22 +16,24 @@ function loadData() {
     
     $greeting.text('Więc podoba ci się ' + address + '?');
     
-    var streetviewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=400x400&location=' + address + '&fov=90&heading=235&pitch=10&key=AIzaSyDGpRLNBWMnmvcytxGbEdk-NXo9nI51JI8';
+    var streetviewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + address + '&fov=90&heading=235&pitch=10&key=AIzaSyDGpRLNBWMnmvcytxGbEdk-NXo9nI51JI8';
     
     $generateImg.append('<img src="' + streetviewUrl + '">');
 
     var nytimesUrl = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + cityStr + '&sort=newest&api-key=ab32caf3cd7c419db3b3df0cdf2d59ad';
-    
-   $.getJSON(nytimesUrl, function(data){
+  
+    $.ajax({
+        url: nytimesUrl,
+        success: function(data){
+            $nytHeaderElem.text('Artykuły w NYT o lokalizacji: ' + cityStr);
         
-        $nytHeaderElem.text('Artykuły w NYT o lokalizacji: ' + cityStr);
+            articles = data.response.docs;
         
-        articles = data.response.docs;
-        
-        for (var i= 0; i < articles.length; i++) {
-            var article = articles[i];
-            $nytElem.append('<li class="article">' + '<a href="' + article.web_url + '">' + article.headline.main + '</a>' + article.snippet + '</p>' + '</li>');
-        };
+            for (var i= 0; i < articles.length; i++) {
+                var article = articles[i];
+                $nytElem.append('<li class="article">' + '<a href="' + article.web_url + '">' + article.headline.main + '</a>' + article.snippet + '</p>' + '</li>');
+            };
+        }
     }).error(function(e){
        $nytHeaderElem.text('Najwidoczniej NYT nic nie napisał o tej lokacji, a szkoda bo jest tak urocza');
     });
@@ -39,7 +41,7 @@ function loadData() {
     var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + cityStr + '&format=json&callback=wikiCallback';
     
     var wikiRequestTimeout = setTimeout(function(){
-        $wikiElem.text("Nie udało się połączyć z Wikipedią, lub nie ma treści dotyczącej okolicy. W drugim wypadku zachęcam do dodania artykułu do Wikipedi");
+        $wikiElem.text("Nie udało się połączyć z Wikipedią, lub nie ma treści dotyczącej okolicy. W drugim wypadku zachęcam do dodania artykułu do Wikipedii");
     }, 10000);
 
     $.ajax({

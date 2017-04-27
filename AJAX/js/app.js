@@ -16,7 +16,7 @@ function loadData() {
     
     $greeting.text('Więc podoba ci się ' + address + '?');
     
-    var streetviewUrl = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&location=' + address + '';
+    var streetviewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=400x400&location=' + address + '&fov=90&heading=235&pitch=10&key=AIzaSyDGpRLNBWMnmvcytxGbEdk-NXo9nI51JI8';
     
     $generateImg.append('<img src="' + streetviewUrl + '">');
 

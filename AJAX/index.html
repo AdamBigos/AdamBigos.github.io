@@ -9,8 +9,8 @@
     <body>
         <h2 id="greeting" class="margin">Jakie miejsce chciałbyś zobaczyć?</h2>
         <form id="form-container">
-               <label>Ulica: <input type="text" id="street" value=""></label>
-               <label>Miasto:<input type="text" id="city" value=""></label>
+               <label>Ulica: <input type="text" id="street" value="" required></label>
+               <label>Miasto:<input type="text" id="city" value="" required></label>
                <label><button id="submit-btn">Submit</button></label>
         </form>
         <div class="container">
@@ -18,7 +18,7 @@
                 <div class="col-lg-6">
                     <div class="background" id="generated_img"></div>
                     <div class="background">
-                        <h3 id="wikipedia-header">Ważniejsze wiadomości z Wikipedi</h3>
+                        <h3 id="wikipedia-header">Ważniejsze wiadomości z Wikipedii</h3>
                         <ul id="wikipedia-links">
                             <li class="no_marks">Znajdź ciekawe wiadomoci na temat tej lokalizacji</li>
                         </ul>

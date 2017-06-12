@@ -5,17 +5,14 @@ html {
 
 body {
   color: #787878;
-  background-color: hotpink;
+  background-color:deepskyblue;
+  background-image: url(../img/background.png);
   font-family: "Comic Sans MS", serif;
   font-size: 20px;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2,{
   font-weight: 500;
 }
 
@@ -27,7 +24,6 @@ img {
 
 .wrapper {
   margin: 0 auto;
-  width: 100%;
   min-width: 480px;
 }
 
@@ -38,12 +34,12 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 100%;
   max-width: 1024px;
 }
 
 .header {
   padding: 15px;
+  background-color: rgba(2,2,2,0.5);    
 }
 
 .header h1 {
@@ -61,11 +57,12 @@ footer {
   padding: 20px;
   font-size: 14px;
   text-align: center;
+  background-color: rgba(2,2,2,0.5);  
 }
 
 footer a {
   text-decoration: none;
-  color: blueviolet;
+  color: #fff;
 }
 .mg {
   /* blank */
@@ -102,13 +99,18 @@ footer a {
   width: 16.2%;
   height: 32.33333%;
   position: absolute;
-  padding: 5px;
-  margin: 3px;
+  padding: 0;
+  margin: 0;
+}
+
+.tile img {
+    height: 90%;
+    margin: 5% auto;
 }
 
 .tile-1 {
   top: 0.5%;
-  left: 0%;
+  left: 0.2%;
 }
 .tile-2 {
   top: 0.5%;
@@ -201,12 +203,12 @@ footer a {
 }
 
 .tile--outside {
-  background: url("../img/default/logo-bw.png") 50% 50% no-repeat;
+  background: url("../img/back_tile.png") 50% 50% no-repeat;
   background-color: #dcdee1;
 }
 
 .tile--inside {
-  background-color: #f8fafc;
+  background-color: darkgray;
   box-shadow: 0 0 0 1px #787a80;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);

@@ -24,67 +24,67 @@
     cards : [
       {
         id : 1,
-        img: "img/default/monsters-01.png"
+        img: "img/image-01.png"
       },
       {
         id : 2,
-        img: "img/default/monsters-02.png"
+        img: "img/image-02.png"
       },
       {
         id : 3,
-        img: "img/default/monsters-03.png"
+        img: "img/image-03.png"
       },
       {
         id : 4,
-        img: "img/default/monsters-04.png"
+        img: "img/image-04.png"
       },
       {
         id : 5,
-        img: "img/default/monsters-05.png"
+        img: "img/image-05.png"
       },
       {
         id : 6,
-        img: "img/default/monsters-06.png"
+        img: "img/image-06.png"
       },
       {
         id : 7,
-        img: "img/default/monsters-07.png"
+        img: "img/image-07.png"
       },
       {
         id : 8,
-        img: "img/default/monsters-08.png"
+        img: "img/image-08.png"
       },
       {
         id : 9,
-        img: "img/default/monsters-09.png"
+        img: "img/image-09.png"
       },
       {
         id : 10,
-        img: "img/default/monsters-10.png"
+        img: "img/image-10.png"
       },
       {
         id : 11,
-        img: "img/default/monsters-11.png"
+        img: "img/image-11.png"
       },
       {
         id : 12,
-        img: "img/default/monsters-12.png"
+        img: "img/image-12.png"
       },
       {
         id : 13,
-        img: "img/default/monsters-13.png"
+        img: "img/image-13.png"
       },
       {
         id : 14,
-        img: "img/default/monsters-14.png"
+        img: "img/image-14.png"
       },
       {
         id : 15,
-        img: "img/default/monsters-15.png"
+        img: "img/image-15.png"
       },
       {
         id : 16,
-        img: "img/default/monsters-16.png"
+        img: "img/image-16.png"
       }
     ],
     onGameStart : function() { return false; },
@@ -138,7 +138,7 @@
     this.gameMeta.innerHTML = this.gameMetaHTML;
     this.game.appendChild(this.gameMeta);
 
-    this.gameStartScreenHTML = '<h2 class="start-screen--heading">ZAPRASZAM DO GRY! </h2>\
+    this.gameStartScreenHTML = '<h1 class="start-screen--heading">ZAPRASZAM DO GRY! </h1>\
       <p class="start-screen--text">Celem jest odnalezienie wszystkich par w jak najmniejszej ilości ruchów. Gra powstała przy współpracy z moim (natenczas) sześcioletnim synem, który zasilił grę ilustracjami.</p>\
       <button id="Start_button" class="button">START</button>';
     this.gameStartScreen.innerHTML = this.gameStartScreenHTML;

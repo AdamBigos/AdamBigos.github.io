@@ -1,6 +1,6 @@
 body,
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -22,11 +22,6 @@ img {
   height: auto;
 }
 
-.wrapper {
-  margin: 0 auto;
-  min-width: 480px;
-}
-
 .moves,
 #moves {
     font-family: "Brush Script Std", serif;
@@ -37,12 +32,12 @@ img {
   max-width: 1024px;
 }
 
-.header {
+header {
   padding: 15px;
   background-color: rgba(2,2,2,0.5);    
 }
 
-.header h1 {
+header h1 {
   text-align: center;
   color: #fff;
   font-size: 18px;
@@ -63,9 +58,6 @@ footer {
 footer a {
   text-decoration: none;
   color: #fff;
-}
-.mg {
-  /* blank */
 }
 
 .mg_meta {

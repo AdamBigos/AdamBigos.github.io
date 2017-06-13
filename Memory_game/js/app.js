@@ -277,7 +277,7 @@
       this._clearGame();
       this.gameMessages.innerHTML = '<h2 class="ending_heading">SUPER WYGRAŁEŚ!</h2>\
         <p class="onend--message">Rozwiązałeś zadanie w ' + this.numMoves + ' ruchach.</p>\
-        <button id="onend--restart" class="button">Zagrasz jeszcze raz?</button>';
+        <button id="onend--restart" class="button">Rozpocznij grę od nowa</button>';
       this.game.appendChild(this.gameMessages);
       document.getElementById("onend--restart").addEventListener( "click", function(e) {
         self.resetGame();

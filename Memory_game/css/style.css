@@ -28,6 +28,8 @@ img {
 }
 
 .container {
+  padding: 20px;
+  background-color: #fff;    
   margin: 0 auto;
   max-width: 1024px;
 }
@@ -41,11 +43,6 @@ header h1 {
   text-align: center;
   color: #fff;
   font-size: 18px;
-}
-
-.content {
-  padding: 20px;
-  background-color: #fff;
 }
 
 footer {

@@ -1,0 +1,139 @@
+h2 {
+    text-transform: uppercase;
+}
+
+p {
+    text-align: left;
+}
+
+img {
+    max-width: 90%;
+    margin: 0.3rem auto;
+    display: block;
+}
+
+img:hover {
+    transform: rotateY(-180deg);
+    transition: transform 0.3s linear 0s;
+}
+
+img:not(:hover){
+    transform: rotateY(0deg);
+    transition: transform 0.3s linear 0s;
+}
+
+.content {
+    text-align: center;
+    max-width: 95%;
+    margin: 3rem auto;
+}
+
+.type {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0.1rem 0.6rem;
+    color: aliceblue;
+}
+
+.grass {
+    background: green;
+}
+
+.poison {
+    background: darkviolet;
+}
+
+.bug {
+    background: greenyellow;
+}
+
+.flying {
+    background: linear-gradient(blue, deepskyblue);
+}
+
+.water {
+    background-color: darkblue;
+}
+
+.fire {
+    background-color: red;
+}
+
+.stats img {
+    align-items: center;
+    vertical-align: middle;
+}
+
+table {
+    border:1px solid #000000;
+    margin: 0.2rem auto;
+}
+
+.stat {
+    width: 6rem;
+}
+
+.value {
+    width: 2rem;
+}
+
+.hp {
+    background: #FF0000;
+}
+
+.hp_fill {
+    background: #FF5959;
+}
+
+.atak {
+    background: #F08030;
+}
+
+.atak_fill {
+    background: #F5AC78;
+}
+
+.def {
+    background: #F8D030;
+}
+
+.def_fill {
+    background: #FAE078;
+}
+
+.sp_atak {
+    background: #6890F0;
+}
+
+.sp_atak_fill {
+    background: #9DB7F5;
+}
+
+.sp_def {
+    background: #78C850;
+}
+
+.sp_def_fill {
+    background: #A7DB8D;
+}
+
+.speed {
+    background: #F85888;
+}
+
+.speed_fill {
+    background: #FA92B2;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 3rem;
+    margin: 4rem;
+    border-radius: 5px;
+}

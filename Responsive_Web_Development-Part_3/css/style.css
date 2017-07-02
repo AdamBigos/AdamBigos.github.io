@@ -145,4 +145,8 @@ a img {
     .col-lg-3 ul li a {
     color: grey;
     }
+    
+    a img {
+        width: 2.3rem;
+    }
 }

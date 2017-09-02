@@ -1,0 +1,71 @@
+.round_menu {
+    background: red;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin: 0px auto;
+}
+
+.round_menu:hover {
+    height: 60px;
+    width: 60px;
+}
+
+.max_60 {
+    max-width: 60rem;
+    margin: 0px auto;
+}
+
+.max_350px {
+    width: 100%;
+    max-width: 350px;
+}
+
+.min_6 {
+    min-width: 6rem; 
+}
+
+.center {
+    text-align: center;
+}
+
+.light{
+    background-color: white;
+}
+
+.padding_3 {
+    padding: 3rem;
+}
+
+.min_20 {
+    min-width: 20rem;
+}
+
+.slide_img{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #292b2c;
+}
+
+#logo {
+    height: 2.5rem;
+}
+
+.grey_background {
+    background: rgba(104,104,104,0.8);
+}
+
+.border_radius_40 {
+    border-radius: 40px;
+}
+
+footer {
+    color: white;
+}
+
+footer ul {
+    margin-left: -1.4rem;
+}

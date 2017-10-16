@@ -1,6 +1,7 @@
 body{
     background: url(../img/background.jpg) center top no-repeat;
     text-align: center;
+    width: 100%;
 }
 a{
    text-decoration: none;

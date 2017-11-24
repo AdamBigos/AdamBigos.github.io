@@ -1,5 +1,6 @@
 body{
-    background: url(../img/background.jpg) center top no-repeat;
+    background: url(../img/background.jpg) center fixed no-repeat;
+    background-size: 100% auto;
     text-align: center;
     width: 100%;
 }

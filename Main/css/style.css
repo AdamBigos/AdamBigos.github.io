@@ -1,17 +1,35 @@
 body{
-    background: url(../img/background.jpg) center fixed no-repeat;
-    background-size: 100% auto;
+    background: url(../img/background.jpg) center top no-repeat;
     text-align: center;
-    width: 100%;
+    
 }
 a{
-   text-decoration: none;
+    color: #cdad00;
+    background: rgba(0,	0,	0, 0.6);
+    width: 40%;
+    display: inline-block;
+    padding: 4px 3px;
+    margin: 0.3%; 
 }
 
-.hidden {
+li :hover{
+    background: white;
+}
+
+**.hidden {
     display: none;
 }
 
-li {
+ul {
     list-style: none;
+}
+
+strong {
+    text-transform: uppercase;
+    color: rebeccapurple;
+    
+}
+
+.main-content {
+    padding: 3% 7%;
 }

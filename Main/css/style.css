@@ -1,26 +1,25 @@
 body{
-    background: url(../img/background.jpg) center top no-repeat;
+    background-image:linear-gradient(to top right, lime, aqua);
     text-align: center;
-    
 }
 a{
-    color: #cdad00;
-    background: rgba(0,	0,	0, 0.6);
-    width: 40%;
+    color: white;
+    width: 300px;
     display: inline-block;
-    padding: 4px 3px;
+    padding: 10px 7px;
     margin: 0.3%; 
 }
 
 li :hover{
-    background: white;
+    background: gray;
+	border-radius: 5px;
 }
 
-**.hidden {
+/*.hidden {
     display: none;
-}
+}*/
 
-ul {
+li {
     list-style: none;
 }
 
@@ -32,4 +31,12 @@ strong {
 
 .main-content {
     padding: 3% 7%;
+	width: 90%;
+	max-width: 700px;
+	min-width: 400px;
+	margin: 0 auto;
+}
+
+ul {
+	margin-left: -35px;
 }

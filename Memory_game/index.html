@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Zamiana polskich znaków na standardowe</title>
+  <meta charset="UTF-8">
+  <title>Zamiana polskich znaków</title>
+  <script>
+    function zamienZnaki() {
+      var inputText = document.getElementById("inputText").value;
+      var outputText = inputText
+        .replace(/ą/g, 'a')
+        .replace(/ć/g, 'c')
+        .replace(/ę/g, 'e')
+        .replace(/ł/g, 'l')
+        .replace(/ń/g, 'n')
+        .replace(/ó/g, 'o')
+        .replace(/ś/g, 's')
+        .replace(/ż/g, 'z')
+        .replace(/ź/g, 'z');
+      document.getElementById("outputText").innerHTML = outputText;
+    }
+  </script>
 </head>
 <body>
-	<label for="input">Wpisz tekst:</label>
-	<input type="text" id="input" oninput="checkInput()" placeholder="Wpisz tekst...">
-	<script>
-		function checkInput() {
-			const input = document.getElementById("input");
-			input.value = input.value.replace(/ą/g, 'a').replace(/ć/g, 'c').replace(/ę/g, 'e').replace(/ł/g, 'l').replace(/ń/g, 'n').replace(/ó/g, 'o').replace(/ś/g, 's').replace(/ź/g, 'z').replace(/ż/g, 'z');
-		}
-	</script>
+  <label for="inputText">Wprowadź tekst:</label><br>
+  <textarea id="inputText"></textarea><br>
+  <button onclick="zamienZnaki()">Zamień znaki</button><br>
+  <label for="outputText">Tekst po zamianie:</label><br>
+  <div id="outputText"></div>
 </body>
 </html>

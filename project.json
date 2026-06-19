@@ -1,0 +1,43 @@
+## Emergency Notification Generator
+
+Build a single-page Incident Report form replicating the described table layout, with PNG export and mailto sending.
+
+### Route
+- Replace `src/routes/index.tsx` placeholder with the Incident Report page (title + meta updated).
+
+### Component
+New `src/components/IncidentReport.tsx` containing:
+- Controlled state object for all fields (status, severity, priority, app, description, leader, team, otherTeams, nextComm, ticketNumber, pir).
+- Rigid HTML `<table>` layout wrapped in a ref'd container for capture.
+- Left-column header cells: `bg-[#188665] text-white font-bold`.
+- All cell borders: `border border-[#188665]` (solid).
+- shadcn `Select`, `Input`, `Textarea` with `border-0 shadow-none focus-visible:ring-0 rounded-none h-full w-full bg-transparent` so they blend into cells.
+- Per-field background/text overrides:
+  - Status select: white bg, light green text.
+  - Severity + Priority selects: red bg (`bg-red-500`), black text.
+  - Aplikacja/Usługa select: white bg, dark blue bold text.
+- Textarea for "Opis incydentu" — multi-line, monospace optional, supports bullets/timestamps as plain text.
+
+### Rows (in order)
+1. Status Awarii — header cell + 3 selects in one row (Status / Severity / Priority).
+2. Aplikacja/Usługa — select (OMR/xRDJ/IKS, etc.).
+3. Opis incydentu\Aktualny stan — large textarea.
+4. IT Tribe Leader — text input.
+5. Zespół zaangażowany — text input.
+6. Inne zespoły zaangażowane — text input.
+7. Następna komunikacja — text input (with datalist of common values).
+8. Numer incydentu w Service Now — text input.
+9. PIR [Y/N] — select (TAK/NIE).
+
+### Actions (buttons below table)
+- **Export to PNG**: install `html2canvas`; capture table ref; trigger download `incident-report-<timestamp>.png`.
+- **Send via Email**: build plain-text body listing each label + value on separate lines; build subject `Incident Report: <app> - <status>`; `window.location.href = mailto:?subject=...&body=...` with proper `encodeURIComponent`.
+
+### Dependencies
+- `bun add html2canvas`
+- Reuse existing shadcn `select`, `input`, `textarea`, `button`.
+
+### Notes
+- Polish labels exactly as provided.
+- Default select option labels visible when empty (placeholder).
+- Responsive: table stays fixed-width on desktop, horizontally scrollable on mobile.
